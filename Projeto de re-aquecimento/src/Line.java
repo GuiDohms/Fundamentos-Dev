@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.time.*;
+
 
 public class Line {
 	public ArrayList<Client> clients;
@@ -17,5 +17,9 @@ public class Line {
 		return true;
 	}
 	
+	public boolean removeClient(Client aClient){
+		clients.remove(aClient);
+		return true;
+	}
 	
 }
