@@ -2,15 +2,18 @@ import java.util.ArrayList;
 
 
 public class Line {
+	private static Line clientLst = new Line();
 	public ArrayList<Client> clients;
+	private int lineNum;
 	
 	public Line(){
 		clients = new ArrayList<>();
+		lineNum = 0;
 	}
 	
-	public ArrayList<Client> getLine(){
-		return(clients);
-	}
+	 public static Line getInstance(){
+	        return(clientLst);
+	    }
 	
 	public boolean addClient(Client aClient){
 		clients.add(aClient);
@@ -22,4 +25,10 @@ public class Line {
 		return true;
 	}
 	
+	public Client lineNum(){
+		return(clients.get(lineNum));
+	}
+
 }
+	
+

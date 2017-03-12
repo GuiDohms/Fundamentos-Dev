@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class main {
 
@@ -10,6 +11,18 @@ public class main {
 		System.out.println(b);
 		Client c = new Client(68, "Elie");
 		System.out.println(c);
+		
+		Line line = new Line();
+		line.addClient(a);
+		line.addClient(b);
+		line.addClient(c);
+		System.out.println("fila: " + line.getLine());
+		
+		line.removeClient(a);
+		line.removeClient(b);
+		System.out.println("fila: " + line.getLine());
+	
+		
 		
 	}
 
