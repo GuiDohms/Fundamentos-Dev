@@ -16,11 +16,11 @@ public class main {
 		line.addClient(a);
 		line.addClient(b);
 		line.addClient(c);
-		System.out.println("fila: " + line.getLine());
+		System.out.println("fila: " + line.getInstance());
 		
 		line.removeClient(a);
 		line.removeClient(b);
-		System.out.println("fila: " + line.getLine());
+		System.out.println("fila: " + line.getInstance());
 	
 		
 		

@@ -83,7 +83,7 @@ public class TakeATicket extends Application{
         });
 
         Button btNext = new Button();
-        btNext.setText(">>");
+        btNext.setText("CANCELAR");
         btNext.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
@@ -91,7 +91,7 @@ public class TakeATicket extends Application{
                     Alert alert = new Alert(AlertType.WARNING);
                     alert.setTitle("Atenção !!");
                     alert.setHeaderText(null);
-                    alert.setContentText("Este é o ultimo pedido!");
+                    alert.setContentText("Voce cancelou!");
                     alert.showAndWait();
                 }else{
                     //exibeDados();
